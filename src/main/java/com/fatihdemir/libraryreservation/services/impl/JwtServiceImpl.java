@@ -1,5 +1,6 @@
 package com.fatihdemir.libraryreservation.services.impl;
 
+import com.fatihdemir.libraryreservation.services.IJwtService;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -15,7 +16,7 @@ import java.util.Map;
 import java.util.function.Function;
 
 @Service
-public class JwtServiceImpl {
+public class JwtServiceImpl implements IJwtService {
 
     private static final String SECRET_KEY = "DH8iCqwZxAcVJy1g7rsoxmlwyrHNPItrjorYA5Dv6CCralvx/AThqA+ginvn/b/o7cp6666QefwVWngerV7alwdjkGcNf2VDt59gyjJuTu8=";
 
